@@ -106,7 +106,7 @@ export default function RootLayout() {
             />
 
             <Stack.Screen
-              name="(runner-kart)/index"
+              name="(runner-cat)/index"
               options={{ headerShown: false }}
             />
 

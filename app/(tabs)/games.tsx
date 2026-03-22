@@ -16,14 +16,14 @@ const games = [
     route: "/(endless-runner)",
     description: "Navigate through asteroids.",
   },
-  // {
-  //   id: "runner-kart",
-  //   title: "Runner Kart",
-  //   emoji: "🏎️",
-  //   color: "#FF375F",
-  //   route: "/(runner-kart)",
-  //   description: "Race your way to victory.",
-  // },
+  {
+    id: "runner-cat",
+    title: "Runner Cat",
+    emoji: "🐱",
+    color: "#FF375F",
+    route: "/(runner-cat)",
+    description: "Race your way to victory.",
+  },
   {
     id: "quiz",
     title: "Quiz Master",

@@ -15,7 +15,6 @@ export const HeaderImage = styled.ImageBackground`
   height: ${height}px;
 `;
 
-
 export const Gradient = styled(LinearGradient)`
   position: absolute;
   bottom: 0;
