@@ -91,7 +91,8 @@ export default function OnboardingScreen() {
 
     load();
 
-    const iosApiKey = "test_QobWWEtVxcmEGIGqWxQJFDBjLVV";
+    const iosApiKey = "appl_PkLTpbVDucWPedXmosRFCbOkfDH";
+
     Purchases.configure({ apiKey: iosApiKey });
   }, []);
 

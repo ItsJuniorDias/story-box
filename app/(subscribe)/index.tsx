@@ -26,6 +26,8 @@ export default function SubscribeScreen() {
       try {
         const offerings = await Purchases.getOfferings();
 
+        console.log("Offerings:", offerings);
+
         if (offerings.current) {
           const availablePackages: any[] = [];
 
