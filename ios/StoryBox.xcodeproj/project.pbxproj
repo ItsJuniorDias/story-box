@@ -9,70 +9,41 @@
 /* Begin PBXBuildFile section */
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
-		51B67C931702666D374E4FA3 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 3FA823DC9B1526441E286993 /* PrivacyInfo.xcprivacy */; };
-		79702F822F70998E00D44B59 /* ViewManagerAdapter_Unity.m in Sources */ = {isa = PBXBuildFile; fileRef = 7971411E2F707C10000958B7 /* ViewManagerAdapter_Unity.m */; };
-		79702F8D2F709C0600D44B59 /* UnityViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79702F882F709C0300D44B59 /* UnityViewManager.swift */; };
-		797141202F707C3F000958B7 /* ViewManagerAdapter_Unity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7971411D2F707BFC000958B7 /* ViewManagerAdapter_Unity.swift */; };
-		7971412A2F70887B000958B7 /* ApplePrivacyManifestsMerge.txt in Resources */ = {isa = PBXBuildFile; fileRef = 797141222F70887B000958B7 /* ApplePrivacyManifestsMerge.txt */; };
-		7971412C2F70887B000958B7 /* AppleRequiredReasonCSharpAPIs.txt in Resources */ = {isa = PBXBuildFile; fileRef = 797141232F70887B000958B7 /* AppleRequiredReasonCSharpAPIs.txt */; };
-		7971414F2F708880000958B7 /* globalgamemanagers.assets in Resources */ = {isa = PBXBuildFile; fileRef = 7971413F2F708880000958B7 /* globalgamemanagers.assets */; };
-		797141502F708880000958B7 /* resources.assets.resS in Resources */ = {isa = PBXBuildFile; fileRef = 797141452F708880000958B7 /* resources.assets.resS */; };
-		797141512F708880000958B7 /* level0 in Resources */ = {isa = PBXBuildFile; fileRef = 797141412F708880000958B7 /* level0 */; };
-		797141522F708880000958B7 /* sharedassets0.assets in Resources */ = {isa = PBXBuildFile; fileRef = 797141482F708880000958B7 /* sharedassets0.assets */; };
-		797141532F708880000958B7 /* sharedassets0.assets.resS in Resources */ = {isa = PBXBuildFile; fileRef = 7971414A2F708880000958B7 /* sharedassets0.assets.resS */; };
-		797141542F708880000958B7 /* unity_builtin_extra in Resources */ = {isa = PBXBuildFile; fileRef = 7971413B2F708880000958B7 /* unity_builtin_extra */; };
-		797141552F708880000958B7 /* sharedassets0.resource in Resources */ = {isa = PBXBuildFile; fileRef = 797141492F708880000958B7 /* sharedassets0.resource */; };
-		797141562F708880000958B7 /* sharedassets2.assets.resS in Resources */ = {isa = PBXBuildFile; fileRef = 7971414D2F708880000958B7 /* sharedassets2.assets.resS */; };
-		797141572F708880000958B7 /* System.Data.dll-resources.dat in Resources */ = {isa = PBXBuildFile; fileRef = 797141342F708880000958B7 /* System.Data.dll-resources.dat */; };
-		797141582F708880000958B7 /* UnityServicesProjectConfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 797141382F708880000958B7 /* UnityServicesProjectConfiguration.json */; };
-		797141592F708880000958B7 /* global-metadata.dat in Resources */ = {isa = PBXBuildFile; fileRef = 7971412E2F708880000958B7 /* global-metadata.dat */; };
-		7971415A2F708880000958B7 /* RuntimeInitializeOnLoads.json in Resources */ = {isa = PBXBuildFile; fileRef = 797141462F708880000958B7 /* RuntimeInitializeOnLoads.json */; };
-		7971415B2F708880000958B7 /* level1 in Resources */ = {isa = PBXBuildFile; fileRef = 797141422F708880000958B7 /* level1 */; };
-		7971415C2F708880000958B7 /* ScriptingAssemblies.json in Resources */ = {isa = PBXBuildFile; fileRef = 797141472F708880000958B7 /* ScriptingAssemblies.json */; };
-		7971415D2F708880000958B7 /* globalgamemanagers.assets.resS in Resources */ = {isa = PBXBuildFile; fileRef = 797141402F708880000958B7 /* globalgamemanagers.assets.resS */; };
-		7971415E2F708880000958B7 /* machine.config in Resources */ = {isa = PBXBuildFile; fileRef = 797141302F708880000958B7 /* machine.config */; };
-		7971415F2F708880000958B7 /* globalgamemanagers in Resources */ = {isa = PBXBuildFile; fileRef = 7971413E2F708880000958B7 /* globalgamemanagers */; };
-		797141602F708880000958B7 /* unity default resources in Resources */ = {isa = PBXBuildFile; fileRef = 7971413A2F708880000958B7 /* unity default resources */; };
-		797141612F708880000958B7 /* level2 in Resources */ = {isa = PBXBuildFile; fileRef = 797141432F708880000958B7 /* level2 */; };
-		797141622F708880000958B7 /* sharedassets2.assets in Resources */ = {isa = PBXBuildFile; fileRef = 7971414C2F708880000958B7 /* sharedassets2.assets */; };
-		797141632F708880000958B7 /* boot.config in Resources */ = {isa = PBXBuildFile; fileRef = 7971413D2F708880000958B7 /* boot.config */; };
-		797141642F708880000958B7 /* mscorlib.dll-resources.dat in Resources */ = {isa = PBXBuildFile; fileRef = 797141332F708880000958B7 /* mscorlib.dll-resources.dat */; };
-		797141652F708880000958B7 /* sharedassets1.assets in Resources */ = {isa = PBXBuildFile; fileRef = 7971414B2F708880000958B7 /* sharedassets1.assets */; };
-		797141662F708880000958B7 /* resources.assets in Resources */ = {isa = PBXBuildFile; fileRef = 797141442F708880000958B7 /* resources.assets */; };
-		797141672F708880000958B7 /* System.Drawing.dll-resources.dat in Resources */ = {isa = PBXBuildFile; fileRef = 797141352F708880000958B7 /* System.Drawing.dll-resources.dat */; };
-		79D2CAEC2F70906B00E0D7B5 /* UnityFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79D2CAE92F70903100E0D7B5 /* UnityFramework.framework */; };
-		79D2CAED2F70906B00E0D7B5 /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 79D2CAE92F70903100E0D7B5 /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		844ADB6CFB851732A5E36231 /* libPods-StoryBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF6370B681A2E9779CD0860A /* libPods-StoryBox.a */; };
+		61F383A48C698B7A88E1DA7C /* libPods-StoryBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF1D8717141333C77A699B3 /* libPods-StoryBox.a */; };
+		793D65AB2F71862D00629EFD /* UnityViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793D65AA2F7185E100629EFD /* UnityViewManager.swift */; };
+		793D65AC2F71863400629EFD /* UnityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793D65A52F71853100629EFD /* UnityView.swift */; };
+		793D65AF2F7188EF00629EFD /* UnityViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 793D65A72F71855200629EFD /* UnityViewManager.m */; };
+		7A3B554FEA62052DB6472F23 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D580B93561227F81D713A26 /* ExpoModulesProvider.swift */; };
+		817ECAD4A6C01F9679CF2E75 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 64DC7DB3E37002CFA69B55C5 /* PrivacyInfo.xcprivacy */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
 		F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11748412D0307B40044C1D9 /* AppDelegate.swift */; };
-		F598F80CBD37AA3A8E8DFBB8 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C440CA327DE5492612843E /* ExpoModulesProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		79D2CAE42F70903100E0D7B5 /* PBXContainerItemProxy */ = {
+		797A6BBB2F718E910071430C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 79D2CADB2F70903100E0D7B5 /* Unity-iPhone.xcodeproj */;
+			containerPortal = 797A6B952F718E310071430C /* Unity-iPhone.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
 			remoteInfo = "Unity-iPhone";
 		};
-		79D2CAE62F70903100E0D7B5 /* PBXContainerItemProxy */ = {
+		797A6BBD2F718E910071430C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 79D2CADB2F70903100E0D7B5 /* Unity-iPhone.xcodeproj */;
+			containerPortal = 797A6B952F718E310071430C /* Unity-iPhone.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 5623C57317FDCB0800090B9E;
 			remoteInfo = "Unity-iPhone Tests";
 		};
-		79D2CAE82F70903100E0D7B5 /* PBXContainerItemProxy */ = {
+		797A6BBF2F718E910071430C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 79D2CADB2F70903100E0D7B5 /* Unity-iPhone.xcodeproj */;
+			containerPortal = 797A6B952F718E310071430C /* Unity-iPhone.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 9D25AB9D213FB47800354C27;
 			remoteInfo = UnityFramework;
 		};
-		79D2CAEA2F70903100E0D7B5 /* PBXContainerItemProxy */ = {
+		797A6BC12F718E910071430C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 79D2CADB2F70903100E0D7B5 /* Unity-iPhone.xcodeproj */;
+			containerPortal = 797A6B952F718E310071430C /* Unity-iPhone.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 7F4E05A02717216D00A2CBE4;
 			remoteInfo = GameAssembly;
@@ -80,13 +51,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		79D2CAEE2F70906B00E0D7B5 /* Embed Frameworks */ = {
+		797A6BB42F718E570071430C /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				79D2CAED2F70906B00E0D7B5 /* UnityFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,50 +67,17 @@
 		13B07F961A680F5B00A75B9A /* StoryBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = StoryBox/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = StoryBox/Info.plist; sourceTree = "<group>"; };
-		20E5C41131249B713F1C85AE /* Pods-StoryBox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoryBox.release.xcconfig"; path = "Target Support Files/Pods-StoryBox/Pods-StoryBox.release.xcconfig"; sourceTree = "<group>"; };
-		3FA823DC9B1526441E286993 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = StoryBox/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		79702F882F709C0300D44B59 /* UnityViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityViewManager.swift; sourceTree = "<group>"; };
-		7971411B2F707B0E000958B7 /* UnityViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityViewManager.h; sourceTree = "<group>"; };
-		7971411D2F707BFC000958B7 /* ViewManagerAdapter_Unity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewManagerAdapter_Unity.swift; sourceTree = "<group>"; };
-		7971411E2F707C10000958B7 /* ViewManagerAdapter_Unity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewManagerAdapter_Unity.m; sourceTree = "<group>"; };
-		797141222F70887B000958B7 /* ApplePrivacyManifestsMerge.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ApplePrivacyManifestsMerge.txt; sourceTree = "<group>"; };
-		797141232F70887B000958B7 /* AppleRequiredReasonCSharpAPIs.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = AppleRequiredReasonCSharpAPIs.txt; sourceTree = "<group>"; };
-		797141242F70887B000958B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		797141252F70887B000958B7 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		797141262F70887B000958B7 /* UnityFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnityFramework.h; sourceTree = "<group>"; };
-		797141272F70887B000958B7 /* UnityFramework.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; path = UnityFramework.tbd; sourceTree = "<group>"; };
-		7971412E2F708880000958B7 /* global-metadata.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = "global-metadata.dat"; sourceTree = "<group>"; };
-		797141302F708880000958B7 /* machine.config */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = machine.config; sourceTree = "<group>"; };
-		797141332F708880000958B7 /* mscorlib.dll-resources.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mscorlib.dll-resources.dat"; sourceTree = "<group>"; };
-		797141342F708880000958B7 /* System.Data.dll-resources.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = "System.Data.dll-resources.dat"; sourceTree = "<group>"; };
-		797141352F708880000958B7 /* System.Drawing.dll-resources.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = "System.Drawing.dll-resources.dat"; sourceTree = "<group>"; };
-		797141382F708880000958B7 /* UnityServicesProjectConfiguration.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UnityServicesProjectConfiguration.json; sourceTree = "<group>"; };
-		7971413A2F708880000958B7 /* unity default resources */ = {isa = PBXFileReference; lastKnownFileType = file; path = "unity default resources"; sourceTree = "<group>"; };
-		7971413B2F708880000958B7 /* unity_builtin_extra */ = {isa = PBXFileReference; lastKnownFileType = file; path = unity_builtin_extra; sourceTree = "<group>"; };
-		7971413D2F708880000958B7 /* boot.config */ = {isa = PBXFileReference; lastKnownFileType = text; path = boot.config; sourceTree = "<group>"; };
-		7971413E2F708880000958B7 /* globalgamemanagers */ = {isa = PBXFileReference; lastKnownFileType = file; path = globalgamemanagers; sourceTree = "<group>"; };
-		7971413F2F708880000958B7 /* globalgamemanagers.assets */ = {isa = PBXFileReference; lastKnownFileType = file; path = globalgamemanagers.assets; sourceTree = "<group>"; };
-		797141402F708880000958B7 /* globalgamemanagers.assets.resS */ = {isa = PBXFileReference; lastKnownFileType = file; path = globalgamemanagers.assets.resS; sourceTree = "<group>"; };
-		797141412F708880000958B7 /* level0 */ = {isa = PBXFileReference; lastKnownFileType = file; path = level0; sourceTree = "<group>"; };
-		797141422F708880000958B7 /* level1 */ = {isa = PBXFileReference; lastKnownFileType = file; path = level1; sourceTree = "<group>"; };
-		797141432F708880000958B7 /* level2 */ = {isa = PBXFileReference; lastKnownFileType = file; path = level2; sourceTree = "<group>"; };
-		797141442F708880000958B7 /* resources.assets */ = {isa = PBXFileReference; lastKnownFileType = file; path = resources.assets; sourceTree = "<group>"; };
-		797141452F708880000958B7 /* resources.assets.resS */ = {isa = PBXFileReference; lastKnownFileType = file; path = resources.assets.resS; sourceTree = "<group>"; };
-		797141462F708880000958B7 /* RuntimeInitializeOnLoads.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RuntimeInitializeOnLoads.json; sourceTree = "<group>"; };
-		797141472F708880000958B7 /* ScriptingAssemblies.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ScriptingAssemblies.json; sourceTree = "<group>"; };
-		797141482F708880000958B7 /* sharedassets0.assets */ = {isa = PBXFileReference; lastKnownFileType = file; path = sharedassets0.assets; sourceTree = "<group>"; };
-		797141492F708880000958B7 /* sharedassets0.resource */ = {isa = PBXFileReference; lastKnownFileType = file; path = sharedassets0.resource; sourceTree = "<group>"; };
-		7971414A2F708880000958B7 /* sharedassets0.assets.resS */ = {isa = PBXFileReference; lastKnownFileType = file; path = sharedassets0.assets.resS; sourceTree = "<group>"; };
-		7971414B2F708880000958B7 /* sharedassets1.assets */ = {isa = PBXFileReference; lastKnownFileType = file; path = sharedassets1.assets; sourceTree = "<group>"; };
-		7971414C2F708880000958B7 /* sharedassets2.assets */ = {isa = PBXFileReference; lastKnownFileType = file; path = sharedassets2.assets; sourceTree = "<group>"; };
-		7971414D2F708880000958B7 /* sharedassets2.assets.resS */ = {isa = PBXFileReference; lastKnownFileType = file; path = sharedassets2.assets.resS; sourceTree = "<group>"; };
-		79D2CAD62F708E0500E0D7B5 /* UnityFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UnityFramework.framework; path = /Users/junior/Documents/UnityExport/UnityFramework.framework; sourceTree = "<absolute>"; };
-		79D2CADB2F70903100E0D7B5 /* Unity-iPhone.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Unity-iPhone.xcodeproj"; path = "/Users/junior/Documents/UnityExport/Unity-iPhone.xcodeproj"; sourceTree = "<absolute>"; };
-		A0C440CA327DE5492612843E /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-StoryBox/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		1FF1D8717141333C77A699B3 /* libPods-StoryBox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StoryBox.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D580B93561227F81D713A26 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-StoryBox/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		64DC7DB3E37002CFA69B55C5 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = StoryBox/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		793D65A52F71853100629EFD /* UnityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityView.swift; sourceTree = "<group>"; };
+		793D65A72F71855200629EFD /* UnityViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnityViewManager.m; sourceTree = "<group>"; };
+		793D65AA2F7185E100629EFD /* UnityViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityViewManager.swift; sourceTree = "<group>"; };
+		797A6B952F718E310071430C /* Unity-iPhone.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "Unity-iPhone.xcodeproj"; sourceTree = "<group>"; };
+		9C587EECF5B81F3D8F043F9A /* Pods-StoryBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoryBox.debug.xcconfig"; path = "Target Support Files/Pods-StoryBox/Pods-StoryBox.debug.xcconfig"; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = StoryBox/SplashScreen.storyboard; sourceTree = "<group>"; };
-		AF6370B681A2E9779CD0860A /* libPods-StoryBox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StoryBox.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
-		C571E6D42BB6E30B9370BFB3 /* Pods-StoryBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoryBox.debug.xcconfig"; path = "Target Support Files/Pods-StoryBox/Pods-StoryBox.debug.xcconfig"; sourceTree = "<group>"; };
+		D123EB858C149A55D35C6ED7 /* Pods-StoryBox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoryBox.release.xcconfig"; path = "Target Support Files/Pods-StoryBox/Pods-StoryBox.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = StoryBox/AppDelegate.swift; sourceTree = "<group>"; };
 		F11748442D0722820044C1D9 /* StoryBox-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "StoryBox-Bridging-Header.h"; path = "StoryBox/StoryBox-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -151,40 +88,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79D2CAEC2F70906B00E0D7B5 /* UnityFramework.framework in Frameworks */,
-				844ADB6CFB851732A5E36231 /* libPods-StoryBox.a in Frameworks */,
+				61F383A48C698B7A88E1DA7C /* libPods-StoryBox.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A1898BAEDE6DFA60B5627AC /* ExpoModulesProviders */ = {
-			isa = PBXGroup;
-			children = (
-				229333AAC1652FFA31D39AD6 /* StoryBox */,
-			);
-			name = ExpoModulesProviders;
-			sourceTree = "<group>";
-		};
 		13B07FAE1A68108700A75B9A /* StoryBox */ = {
 			isa = PBXGroup;
 			children = (
+				793D65AA2F7185E100629EFD /* UnityViewManager.swift */,
+				793D65A52F71853100629EFD /* UnityView.swift */,
+				793D65A72F71855200629EFD /* UnityViewManager.m */,
 				F11748412D0307B40044C1D9 /* AppDelegate.swift */,
 				F11748442D0722820044C1D9 /* StoryBox-Bridging-Header.h */,
 				BB2F792B24A3F905000567C9 /* Supporting */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
-				3FA823DC9B1526441E286993 /* PrivacyInfo.xcprivacy */,
-			);
-			name = StoryBox;
-			sourceTree = "<group>";
-		};
-		229333AAC1652FFA31D39AD6 /* StoryBox */ = {
-			isa = PBXGroup;
-			children = (
-				A0C440CA327DE5492612843E /* ExpoModulesProvider.swift */,
+				64DC7DB3E37002CFA69B55C5 /* PrivacyInfo.xcprivacy */,
 			);
 			name = StoryBox;
 			sourceTree = "<group>";
@@ -192,121 +115,36 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				79D2CAD62F708E0500E0D7B5 /* UnityFramework.framework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				AF6370B681A2E9779CD0860A /* libPods-StoryBox.a */,
+				1FF1D8717141333C77A699B3 /* libPods-StoryBox.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		797141282F70887B000958B7 /* UnityFramework */ = {
+		46416A54543132316B6E7EB7 /* StoryBox */ = {
 			isa = PBXGroup;
 			children = (
-				797141222F70887B000958B7 /* ApplePrivacyManifestsMerge.txt */,
-				797141232F70887B000958B7 /* AppleRequiredReasonCSharpAPIs.txt */,
-				797141242F70887B000958B7 /* Info.plist */,
-				797141252F70887B000958B7 /* PrivacyInfo.xcprivacy */,
-				797141262F70887B000958B7 /* UnityFramework.h */,
-				797141272F70887B000958B7 /* UnityFramework.tbd */,
+				5D580B93561227F81D713A26 /* ExpoModulesProvider.swift */,
 			);
-			path = UnityFramework;
+			name = StoryBox;
 			sourceTree = "<group>";
 		};
-		7971412F2F708880000958B7 /* Metadata */ = {
+		7465F64D8A0226FB9087C3D8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7971412E2F708880000958B7 /* global-metadata.dat */,
+				9C587EECF5B81F3D8F043F9A /* Pods-StoryBox.debug.xcconfig */,
+				D123EB858C149A55D35C6ED7 /* Pods-StoryBox.release.xcconfig */,
 			);
-			path = Metadata;
+			path = Pods;
 			sourceTree = "<group>";
 		};
-		797141312F708880000958B7 /* 4.0 */ = {
+		797A6BB52F718E910071430C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				797141302F708880000958B7 /* machine.config */,
-			);
-			path = 4.0;
-			sourceTree = "<group>";
-		};
-		797141322F708880000958B7 /* mono */ = {
-			isa = PBXGroup;
-			children = (
-				797141312F708880000958B7 /* 4.0 */,
-			);
-			path = mono;
-			sourceTree = "<group>";
-		};
-		797141362F708880000958B7 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				797141332F708880000958B7 /* mscorlib.dll-resources.dat */,
-				797141342F708880000958B7 /* System.Data.dll-resources.dat */,
-				797141352F708880000958B7 /* System.Drawing.dll-resources.dat */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		797141372F708880000958B7 /* Managed */ = {
-			isa = PBXGroup;
-			children = (
-				7971412F2F708880000958B7 /* Metadata */,
-				797141322F708880000958B7 /* mono */,
-				797141362F708880000958B7 /* Resources */,
-			);
-			path = Managed;
-			sourceTree = "<group>";
-		};
-		797141392F708880000958B7 /* Raw */ = {
-			isa = PBXGroup;
-			children = (
-				797141382F708880000958B7 /* UnityServicesProjectConfiguration.json */,
-			);
-			path = Raw;
-			sourceTree = "<group>";
-		};
-		7971413C2F708880000958B7 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				7971413A2F708880000958B7 /* unity default resources */,
-				7971413B2F708880000958B7 /* unity_builtin_extra */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		7971414E2F708880000958B7 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				797141372F708880000958B7 /* Managed */,
-				797141392F708880000958B7 /* Raw */,
-				7971413C2F708880000958B7 /* Resources */,
-				7971413D2F708880000958B7 /* boot.config */,
-				7971413E2F708880000958B7 /* globalgamemanagers */,
-				7971413F2F708880000958B7 /* globalgamemanagers.assets */,
-				797141402F708880000958B7 /* globalgamemanagers.assets.resS */,
-				797141412F708880000958B7 /* level0 */,
-				797141422F708880000958B7 /* level1 */,
-				797141432F708880000958B7 /* level2 */,
-				797141442F708880000958B7 /* resources.assets */,
-				797141452F708880000958B7 /* resources.assets.resS */,
-				797141462F708880000958B7 /* RuntimeInitializeOnLoads.json */,
-				797141472F708880000958B7 /* ScriptingAssemblies.json */,
-				797141482F708880000958B7 /* sharedassets0.assets */,
-				797141492F708880000958B7 /* sharedassets0.resource */,
-				7971414A2F708880000958B7 /* sharedassets0.assets.resS */,
-				7971414B2F708880000958B7 /* sharedassets1.assets */,
-				7971414C2F708880000958B7 /* sharedassets2.assets */,
-				7971414D2F708880000958B7 /* sharedassets2.assets.resS */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		79D2CADE2F70903100E0D7B5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				79D2CAE52F70903100E0D7B5 /* catrunner.app */,
-				79D2CAE72F70903100E0D7B5 /* Unity-iPhone Tests.xctest */,
-				79D2CAE92F70903100E0D7B5 /* UnityFramework.framework */,
-				79D2CAEB2F70903100E0D7B5 /* libGameAssembly.a */,
+				797A6BBC2F718E910071430C /* cat-runner.app */,
+				797A6BBE2F718E910071430C /* Unity-iPhone Tests.xctest */,
+				797A6BC02F718E910071430C /* UnityFramework.framework */,
+				797A6BC22F718E910071430C /* libGameAssembly.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -321,19 +159,13 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				79D2CADB2F70903100E0D7B5 /* Unity-iPhone.xcodeproj */,
-				7971414E2F708880000958B7 /* Data */,
-				797141282F70887B000958B7 /* UnityFramework */,
-				7971411E2F707C10000958B7 /* ViewManagerAdapter_Unity.m */,
-				79702F882F709C0300D44B59 /* UnityViewManager.swift */,
-				7971411D2F707BFC000958B7 /* ViewManagerAdapter_Unity.swift */,
-				7971411B2F707B0E000958B7 /* UnityViewManager.h */,
+				797A6B952F718E310071430C /* Unity-iPhone.xcodeproj */,
 				13B07FAE1A68108700A75B9A /* StoryBox */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				AFCF749E87D4B24D1F9E0F8E /* Pods */,
-				0A1898BAEDE6DFA60B5627AC /* ExpoModulesProviders */,
+				7465F64D8A0226FB9087C3D8 /* Pods */,
+				F8E6A16C2AC398484E7E3CCD /* ExpoModulesProviders */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -348,15 +180,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AFCF749E87D4B24D1F9E0F8E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C571E6D42BB6E30B9370BFB3 /* Pods-StoryBox.debug.xcconfig */,
-				20E5C41131249B713F1C85AE /* Pods-StoryBox.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		BB2F792B24A3F905000567C9 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
@@ -366,6 +189,14 @@
 			path = StoryBox/Supporting;
 			sourceTree = "<group>";
 		};
+		F8E6A16C2AC398484E7E3CCD /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				46416A54543132316B6E7EB7 /* StoryBox */,
+			);
+			name = ExpoModulesProviders;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -373,16 +204,16 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "StoryBox" */;
 			buildPhases = (
-				9D627AFFCF084EF1DA150E54 /* [CP] Check Pods Manifest.lock */,
-				97451509B1BF0524808C577A /* [Expo] Configure project */,
+				08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */,
+				2275F2FA6A582131EA828353 /* [Expo] Configure project */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				368AA7031DEB46C5B4D39C32 /* [Expo Dev Launcher] Strip Local Network Keys for Release */,
-				79D2CAEE2F70906B00E0D7B5 /* Embed Frameworks */,
-				C0F7954564780B7C143EC661 /* [CP] Embed Pods Frameworks */,
-				6574624039986F90F7726737 /* [CP] Copy Pods Resources */,
+				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
+				74D126789D074B04AA96C3D8 /* [Expo Dev Launcher] Strip Local Network Keys for Release */,
+				4EE358CFBE8EFEFB06129F5C /* [CP] Embed Pods Frameworks */,
+				797A6BB42F718E570071430C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -421,8 +252,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 79D2CADE2F70903100E0D7B5 /* Products */;
-					ProjectRef = 79D2CADB2F70903100E0D7B5 /* Unity-iPhone.xcodeproj */;
+					ProductGroup = 797A6BB52F718E910071430C /* Products */;
+					ProjectRef = 797A6B952F718E310071430C /* Unity-iPhone.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -433,32 +264,32 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		79D2CAE52F70903100E0D7B5 /* catrunner.app */ = {
+		797A6BBC2F718E910071430C /* cat-runner.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
-			path = catrunner.app;
-			remoteRef = 79D2CAE42F70903100E0D7B5 /* PBXContainerItemProxy */;
+			path = "cat-runner.app";
+			remoteRef = 797A6BBB2F718E910071430C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		79D2CAE72F70903100E0D7B5 /* Unity-iPhone Tests.xctest */ = {
+		797A6BBE2F718E910071430C /* Unity-iPhone Tests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = "Unity-iPhone Tests.xctest";
-			remoteRef = 79D2CAE62F70903100E0D7B5 /* PBXContainerItemProxy */;
+			remoteRef = 797A6BBD2F718E910071430C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		79D2CAE92F70903100E0D7B5 /* UnityFramework.framework */ = {
+		797A6BC02F718E910071430C /* UnityFramework.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = UnityFramework.framework;
-			remoteRef = 79D2CAE82F70903100E0D7B5 /* PBXContainerItemProxy */;
+			remoteRef = 797A6BBF2F718E910071430C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		79D2CAEB2F70903100E0D7B5 /* libGameAssembly.a */ = {
+		797A6BC22F718E910071430C /* libGameAssembly.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libGameAssembly.a;
-			remoteRef = 79D2CAEA2F70903100E0D7B5 /* PBXContainerItemProxy */;
+			remoteRef = 797A6BC12F718E910071430C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -468,37 +299,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7971412A2F70887B000958B7 /* ApplePrivacyManifestsMerge.txt in Resources */,
-				7971412C2F70887B000958B7 /* AppleRequiredReasonCSharpAPIs.txt in Resources */,
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
-				51B67C931702666D374E4FA3 /* PrivacyInfo.xcprivacy in Resources */,
-				7971414F2F708880000958B7 /* globalgamemanagers.assets in Resources */,
-				797141502F708880000958B7 /* resources.assets.resS in Resources */,
-				797141512F708880000958B7 /* level0 in Resources */,
-				797141522F708880000958B7 /* sharedassets0.assets in Resources */,
-				797141532F708880000958B7 /* sharedassets0.assets.resS in Resources */,
-				797141542F708880000958B7 /* unity_builtin_extra in Resources */,
-				797141552F708880000958B7 /* sharedassets0.resource in Resources */,
-				797141562F708880000958B7 /* sharedassets2.assets.resS in Resources */,
-				797141572F708880000958B7 /* System.Data.dll-resources.dat in Resources */,
-				797141582F708880000958B7 /* UnityServicesProjectConfiguration.json in Resources */,
-				797141592F708880000958B7 /* global-metadata.dat in Resources */,
-				7971415A2F708880000958B7 /* RuntimeInitializeOnLoads.json in Resources */,
-				7971415B2F708880000958B7 /* level1 in Resources */,
-				7971415C2F708880000958B7 /* ScriptingAssemblies.json in Resources */,
-				7971415D2F708880000958B7 /* globalgamemanagers.assets.resS in Resources */,
-				7971415E2F708880000958B7 /* machine.config in Resources */,
-				7971415F2F708880000958B7 /* globalgamemanagers in Resources */,
-				797141602F708880000958B7 /* unity default resources in Resources */,
-				797141612F708880000958B7 /* level2 in Resources */,
-				797141622F708880000958B7 /* sharedassets2.assets in Resources */,
-				797141632F708880000958B7 /* boot.config in Resources */,
-				797141642F708880000958B7 /* mscorlib.dll-resources.dat in Resources */,
-				797141652F708880000958B7 /* sharedassets1.assets in Resources */,
-				797141662F708880000958B7 /* resources.assets in Resources */,
-				797141672F708880000958B7 /* System.Drawing.dll-resources.dat in Resources */,
+				817ECAD4A6C01F9679CF2E75 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,7 +326,75 @@
 			shellPath = /bin/sh;
 			shellScript = "if [[ -f \"$PODS_ROOT/../.xcode.env\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env\"\nfi\nif [[ -f \"$PODS_ROOT/../.xcode.env.local\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.local\"\nfi\n\n# The project root by default is one level up from the ios directory\nexport PROJECT_ROOT=\"$PROJECT_DIR\"/..\n\nif [[ \"$CONFIGURATION\" = *Debug* ]]; then\n  export SKIP_BUNDLING=1\nfi\nif [[ -z \"$ENTRY_FILE\" ]]; then\n  # Set the entry JS file using the bundler's entry resolution.\n  export ENTRY_FILE=\"$(\"$NODE_BINARY\" -e \"require('expo/scripts/resolveAppEntry')\" \"$PROJECT_ROOT\" ios absolute | tail -n 1)\"\nfi\n\nif [[ -z \"$CLI_PATH\" ]]; then\n  # Use Expo CLI\n  export CLI_PATH=\"$(\"$NODE_BINARY\" --print \"require.resolve('@expo/cli', { paths: [require.resolve('expo/package.json')] })\")\"\nfi\nif [[ -z \"$BUNDLE_COMMAND\" ]]; then\n  # Default Expo CLI command for bundling\n  export BUNDLE_COMMAND=\"export:embed\"\nfi\n\n# Source .xcode.env.updates if it exists to allow\n# SKIP_BUNDLING to be unset if needed\nif [[ -f \"$PODS_ROOT/../.xcode.env.updates\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.updates\"\nfi\n# Source local changes to allow overrides\n# if needed\nif [[ -f \"$PODS_ROOT/../.xcode.env.local\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.local\"\nfi\n\n`\"$NODE_BINARY\" --print \"require('path').dirname(require.resolve('react-native/package.json')) + '/scripts/react-native-xcode.sh'\"`\n\n";
 		};
-		368AA7031DEB46C5B4D39C32 /* [Expo Dev Launcher] Strip Local Network Keys for Release */ = {
+		08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StoryBox-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2275F2FA6A582131EA828353 /* [Expo] Configure project */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/.xcode.env",
+				"$(SRCROOT)/.xcode.env.local",
+				"$(SRCROOT)/StoryBox/StoryBox.entitlements",
+				"$(SRCROOT)/Pods/Target Support Files/Pods-StoryBox/expo-configure-project.sh",
+			);
+			name = "[Expo] Configure project";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/Pods/Target Support Files/Pods-StoryBox/ExpoModulesProvider.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-StoryBox/expo-configure-project.sh\"\n";
+		};
+		4EE358CFBE8EFEFB06129F5C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StoryBox/Pods-StoryBox-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/React-Core-prebuilt/React.framework/React",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/ReactNativeDependencies/ReactNativeDependencies.framework/ReactNativeDependencies",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermesvm.framework/hermesvm",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/React.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactNativeDependencies.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermesvm.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StoryBox/Pods-StoryBox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74D126789D074B04AA96C3D8 /* [Expo Dev Launcher] Strip Local Network Keys for Release */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -536,7 +408,7 @@
 			shellPath = /bin/sh;
 			shellScript = "# Strip dev-launcher-specific local network permission keys from non-Debug builds\n# This only removes _expo._tcp Bonjour services and the dev-launcher usage description.\n# Other Bonjour services and custom descriptions are preserved for production use.\n\nif [ \"$CONFIGURATION\" != \"Debug\" ]; then\n  PLIST_PATH=\"${TARGET_BUILD_DIR}/${INFOPLIST_PATH}\"\n  if [ -f \"$PLIST_PATH\" ]; then\n    # Check if NSBonjourServices exists\n    if /usr/libexec/PlistBuddy -c \"Print :NSBonjourServices\" \"$PLIST_PATH\" >/dev/null 2>&1; then\n      # Get the count of services\n      COUNT=$(/usr/libexec/PlistBuddy -c \"Print :NSBonjourServices\" \"$PLIST_PATH\" 2>/dev/null | grep \"^    \" | wc -l | tr -d ' ')\n\n      # Remove _expo._tcp\n      for ((i=COUNT-1; i>=0; i--)); do\n        SERVICE=$(/usr/libexec/PlistBuddy -c \"Print :NSBonjourServices:$i\" \"$PLIST_PATH\" 2>/dev/null || echo \"\")\n        if echo \"$SERVICE\" | grep -q \"_expo._tcp\"; then\n          /usr/libexec/PlistBuddy -c \"Delete :NSBonjourServices:$i\" \"$PLIST_PATH\" 2>/dev/null || true\n        fi\n      done\n\n      # If the array is now empty, remove it entirely\n      REMAINING=$(/usr/libexec/PlistBuddy -c \"Print :NSBonjourServices\" \"$PLIST_PATH\" 2>/dev/null | grep \"^    \" | wc -l | tr -d ' ')\n      if [ \"$REMAINING\" -eq \"0\" ]; then\n        /usr/libexec/PlistBuddy -c \"Delete :NSBonjourServices\" \"$PLIST_PATH\" 2>/dev/null || true\n      fi\n    fi\n\n    # Only delete the description if it matches the dev-launcher default text\n    DESC=$(/usr/libexec/PlistBuddy -c \"Print :NSLocalNetworkUsageDescription\" \"$PLIST_PATH\" 2>/dev/null || echo \"\")\n    if echo \"$DESC\" | grep -q \"Expo Dev Launcher\"; then\n      /usr/libexec/PlistBuddy -c \"Delete :NSLocalNetworkUsageDescription\" \"$PLIST_PATH\" 2>/dev/null || true\n    fi\n  fi\nfi\n";
 		};
-		6574624039986F90F7726737 /* [CP] Copy Pods Resources */ = {
+		800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -582,74 +454,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StoryBox/Pods-StoryBox-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		97451509B1BF0524808C577A /* [Expo] Configure project */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/.xcode.env",
-				"$(SRCROOT)/.xcode.env.local",
-				"$(SRCROOT)/StoryBox/StoryBox.entitlements",
-				"$(SRCROOT)/Pods/Target Support Files/Pods-StoryBox/expo-configure-project.sh",
-			);
-			name = "[Expo] Configure project";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(SRCROOT)/Pods/Target Support Files/Pods-StoryBox/ExpoModulesProvider.swift",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-StoryBox/expo-configure-project.sh\"\n";
-		};
-		9D627AFFCF084EF1DA150E54 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-StoryBox-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C0F7954564780B7C143EC661 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-StoryBox/Pods-StoryBox-frameworks.sh",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/React-Core-prebuilt/React.framework/React",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/ReactNativeDependencies/ReactNativeDependencies.framework/ReactNativeDependencies",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermesvm.framework/hermesvm",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/React.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactNativeDependencies.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermesvm.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StoryBox/Pods-StoryBox-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -657,11 +461,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				797141202F707C3F000958B7 /* ViewManagerAdapter_Unity.swift in Sources */,
+				793D65AB2F71862D00629EFD /* UnityViewManager.swift in Sources */,
 				F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */,
-				F598F80CBD37AA3A8E8DFBB8 /* ExpoModulesProvider.swift in Sources */,
-				79702F822F70998E00D44B59 /* ViewManagerAdapter_Unity.m in Sources */,
-				79702F8D2F709C0600D44B59 /* UnityViewManager.swift in Sources */,
+				793D65AC2F71863400629EFD /* UnityView.swift in Sources */,
+				7A3B554FEA62052DB6472F23 /* ExpoModulesProvider.swift in Sources */,
+				793D65AF2F7188EF00629EFD /* UnityViewManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -670,7 +474,7 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C571E6D42BB6E30B9370BFB3 /* Pods-StoryBox.debug.xcconfig */;
+			baseConfigurationReference = 9C587EECF5B81F3D8F043F9A /* Pods-StoryBox.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -685,16 +489,10 @@
 					"FB_SONARKIT_ENABLED=1",
 				);
 				INFOPLIST_FILE = StoryBox/Info.plist;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(SDKROOT)/usr/lib/swift",
-					"$(inherited)",
-					"$(PROJECT_DIR)/UnityFramework",
 				);
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
@@ -705,7 +503,7 @@
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alexandrejunior.story-box";
 				PRODUCT_NAME = StoryBox;
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/UnityViewManager.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "StoryBox/StoryBox-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -715,7 +513,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 20E5C41131249B713F1C85AE /* Pods-StoryBox.release.xcconfig */;
+			baseConfigurationReference = D123EB858C149A55D35C6ED7 /* Pods-StoryBox.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -725,16 +523,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9337P26ZJ6;
 				INFOPLIST_FILE = StoryBox/Info.plist;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(SDKROOT)/usr/lib/swift",
-					"$(inherited)",
-					"$(PROJECT_DIR)/UnityFramework",
 				);
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
@@ -745,7 +537,7 @@
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alexandrejunior.story-box";
 				PRODUCT_NAME = StoryBox;
-				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/UnityViewManager.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "StoryBox/StoryBox-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
