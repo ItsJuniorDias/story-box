@@ -22,7 +22,12 @@ platform :ios, podfile_properties['ios.deploymentTarget'] || '15.1'
 
 prepare_react_native_project!
 
+workspace 'StoryBox.xcworkspace'
+
 target 'StoryBox' do
+
+  project 'StoryBox.xcodeproj'
+
   use_expo_modules!
 
   if ENV['EXPO_USE_COMMUNITY_AUTOLINKING'] == '1'
@@ -62,4 +67,13 @@ target 'StoryBox' do
       :ccache_enabled => ccache_enabled?(podfile_properties),
     )
   end
+end
+
+target 'UnityFramework' do
+  # Aponta apenas para o projeto, sem tentar tratá-lo como um Pod local
+  project 'Unity-iPhone.xcodeproj'
+  
+  # Se o seu React Native exige use_frameworks! no target principal, 
+  # pode manter isso aqui para evitar conflitos de linkage, mas a linha vital 
+  # é apenas o `project` acima.
 end

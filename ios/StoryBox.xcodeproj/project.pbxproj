@@ -11,12 +11,61 @@
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
 		64DB4064F5A5403A28F6C02A /* libPods-StoryBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8216EFB03F8DA943AFEE85BE /* libPods-StoryBox.a */; };
 		71AB32806FCF63B045824728 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B566613676F705E2CC40EF94 /* ExpoModulesProvider.swift */; };
-		797E04B72F71DE28004DD1B4 /* MyBlueViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797E04B62F71DE28004DD1B4 /* MyBlueViewManager.swift */; };
-		797E04B92F71DE82004DD1B4 /* MyBlueViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 797E04B82F71DE82004DD1B4 /* MyBlueViewManager.m */; };
+		797E05D72F71EE73004DD1B4 /* UnityViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797E05D62F71EE73004DD1B4 /* UnityViewManager.swift */; };
+		797E05EC2F71EF60004DD1B4 /* UnityContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797E05EB2F71EF60004DD1B4 /* UnityContainerView.swift */; };
+		797E1C7B2F71FEA8004DD1B4 /* UnityFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797E1C782F71FE8C004DD1B4 /* UnityFramework.framework */; };
+		797E1C7C2F71FEA8004DD1B4 /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 797E1C782F71FE8C004DD1B4 /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		797E1C7E2F7200AE004DD1B4 /* UnityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 797E1C7D2F7200AE004DD1B4 /* UnityManager.m */; };
+		797E1C802F7200C1004DD1B4 /* UnityViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 797E1C7F2F7200C1004DD1B4 /* UnityViewManager.m */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
 		E43EB7E042F0E6DF1DC85C0F /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = E4A6F189B3CEF8872E4C9C48 /* PrivacyInfo.xcprivacy */; };
 		F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11748412D0307B40044C1D9 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		797E1C732F71FE8C004DD1B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 797E1C6A2F71FE8C004DD1B4 /* Unity-iPhone.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
+			remoteInfo = "Unity-iPhone";
+		};
+		797E1C752F71FE8C004DD1B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 797E1C6A2F71FE8C004DD1B4 /* Unity-iPhone.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5623C57317FDCB0800090B9E;
+			remoteInfo = "Unity-iPhone Tests";
+		};
+		797E1C772F71FE8C004DD1B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 797E1C6A2F71FE8C004DD1B4 /* Unity-iPhone.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9D25AB9D213FB47800354C27;
+			remoteInfo = UnityFramework;
+		};
+		797E1C792F71FE8C004DD1B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 797E1C6A2F71FE8C004DD1B4 /* Unity-iPhone.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7F4E05A02717216D00A2CBE4;
+			remoteInfo = GameAssembly;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		797E1C692F71FB96004DD1B4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				797E1C7C2F71FEA8004DD1B4 /* UnityFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		13B07F961A680F5B00A75B9A /* StoryBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,8 +73,12 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = StoryBox/Info.plist; sourceTree = "<group>"; };
 		27EFB0C58E0FC454DF91A398 /* Pods-StoryBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoryBox.debug.xcconfig"; path = "Target Support Files/Pods-StoryBox/Pods-StoryBox.debug.xcconfig"; sourceTree = "<group>"; };
 		6436DAC8F98F84F357519816 /* Pods-StoryBox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoryBox.release.xcconfig"; path = "Target Support Files/Pods-StoryBox/Pods-StoryBox.release.xcconfig"; sourceTree = "<group>"; };
-		797E04B62F71DE28004DD1B4 /* MyBlueViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBlueViewManager.swift; sourceTree = "<group>"; };
-		797E04B82F71DE82004DD1B4 /* MyBlueViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyBlueViewManager.m; sourceTree = "<group>"; };
+		797E05D62F71EE73004DD1B4 /* UnityViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityViewManager.swift; sourceTree = "<group>"; };
+		797E05E72F71EF10004DD1B4 /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		797E05EB2F71EF60004DD1B4 /* UnityContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityContainerView.swift; sourceTree = "<group>"; };
+		797E1C6A2F71FE8C004DD1B4 /* Unity-iPhone.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Unity-iPhone.xcodeproj"; path = "/Users/junior/CAT-IOS/Unity-iPhone.xcodeproj"; sourceTree = "<absolute>"; };
+		797E1C7D2F7200AE004DD1B4 /* UnityManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnityManager.m; sourceTree = "<group>"; };
+		797E1C7F2F7200C1004DD1B4 /* UnityViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnityViewManager.m; sourceTree = "<group>"; };
 		8216EFB03F8DA943AFEE85BE /* libPods-StoryBox.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StoryBox.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = StoryBox/SplashScreen.storyboard; sourceTree = "<group>"; };
 		B566613676F705E2CC40EF94 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-StoryBox/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
@@ -42,6 +95,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64DB4064F5A5403A28F6C02A /* libPods-StoryBox.a in Frameworks */,
+				797E1C7B2F71FEA8004DD1B4 /* UnityFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +105,7 @@
 		13B07FAE1A68108700A75B9A /* StoryBox */ = {
 			isa = PBXGroup;
 			children = (
+				797E1C6A2F71FE8C004DD1B4 /* Unity-iPhone.xcodeproj */,
 				F11748412D0307B40044C1D9 /* AppDelegate.swift */,
 				F11748442D0722820044C1D9 /* StoryBox-Bridging-Header.h */,
 				BB2F792B24A3F905000567C9 /* Supporting */,
@@ -58,8 +113,10 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
 				E4A6F189B3CEF8872E4C9C48 /* PrivacyInfo.xcprivacy */,
-				797E04B62F71DE28004DD1B4 /* MyBlueViewManager.swift */,
-				797E04B82F71DE82004DD1B4 /* MyBlueViewManager.m */,
+				797E05D62F71EE73004DD1B4 /* UnityViewManager.swift */,
+				797E05EB2F71EF60004DD1B4 /* UnityContainerView.swift */,
+				797E1C7D2F7200AE004DD1B4 /* UnityManager.m */,
+				797E1C7F2F7200C1004DD1B4 /* UnityViewManager.m */,
 			);
 			name = StoryBox;
 			sourceTree = "<group>";
@@ -75,6 +132,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				797E05E72F71EF10004DD1B4 /* UnityFramework.framework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				8216EFB03F8DA943AFEE85BE /* libPods-StoryBox.a */,
 			);
@@ -87,6 +145,17 @@
 				B566613676F705E2CC40EF94 /* ExpoModulesProvider.swift */,
 			);
 			name = StoryBox;
+			sourceTree = "<group>";
+		};
+		797E1C6D2F71FE8C004DD1B4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				797E1C742F71FE8C004DD1B4 /* Unity-Target-New.app */,
+				797E1C762F71FE8C004DD1B4 /* Unity-iPhone Tests.xctest */,
+				797E1C782F71FE8C004DD1B4 /* UnityFramework.framework */,
+				797E1C7A2F71FE8C004DD1B4 /* libGameAssembly.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -153,6 +222,7 @@
 				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
 				63106C4322C341A3B87E850E /* [Expo Dev Launcher] Strip Local Network Keys for Release */,
 				23E8E7A02F05DAE10D0EC3E8 /* [CP] Embed Pods Frameworks */,
+				797E1C692F71FB96004DD1B4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,12 +259,50 @@
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 797E1C6D2F71FE8C004DD1B4 /* Products */;
+					ProjectRef = 797E1C6A2F71FE8C004DD1B4 /* Unity-iPhone.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* StoryBox */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		797E1C742F71FE8C004DD1B4 /* Unity-Target-New.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			name = "Unity-Target-New.app";
+			path = "cat-runner.app";
+			remoteRef = 797E1C732F71FE8C004DD1B4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		797E1C762F71FE8C004DD1B4 /* Unity-iPhone Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Unity-iPhone Tests.xctest";
+			remoteRef = 797E1C752F71FE8C004DD1B4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		797E1C782F71FE8C004DD1B4 /* UnityFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = UnityFramework.framework;
+			remoteRef = 797E1C772F71FE8C004DD1B4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		797E1C7A2F71FE8C004DD1B4 /* libGameAssembly.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGameAssembly.a;
+			remoteRef = 797E1C792F71FE8C004DD1B4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		13B07F8E1A680F5B00A75B9A /* Resources */ = {
@@ -363,10 +471,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				797E1C7E2F7200AE004DD1B4 /* UnityManager.m in Sources */,
 				F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */,
+				797E1C802F7200C1004DD1B4 /* UnityViewManager.m in Sources */,
 				71AB32806FCF63B045824728 /* ExpoModulesProvider.swift in Sources */,
-				797E04B92F71DE82004DD1B4 /* MyBlueViewManager.m in Sources */,
-				797E04B72F71DE28004DD1B4 /* MyBlueViewManager.swift in Sources */,
+				797E05EC2F71EF60004DD1B4 /* UnityContainerView.swift in Sources */,
+				797E05D72F71EE73004DD1B4 /* UnityViewManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +504,14 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/lib/swift",
+					"$(inherited)",
+					"$(PROJECT_DIR)/CAT-IOS/Il2CppOutputProject/IL2CPP/build/deploy_arm64",
+					"$(PROJECT_DIR)/CAT-IOS/Il2CppOutputProject/IL2CPP/build/deploy_x86_64",
+					"$(PROJECT_DIR)/CAT-IOS/Libraries",
+					"$(PROJECT_DIR)/CAT-IOS/UnityFramework",
 				);
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
@@ -428,6 +546,14 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/lib/swift",
+					"$(inherited)",
+					"$(PROJECT_DIR)/CAT-IOS/Il2CppOutputProject/IL2CPP/build/deploy_arm64",
+					"$(PROJECT_DIR)/CAT-IOS/Il2CppOutputProject/IL2CPP/build/deploy_x86_64",
+					"$(PROJECT_DIR)/CAT-IOS/Libraries",
+					"$(PROJECT_DIR)/CAT-IOS/UnityFramework",
 				);
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (

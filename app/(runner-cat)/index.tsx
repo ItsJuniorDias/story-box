@@ -9,9 +9,9 @@ import {
 
 // 1. Tenta carregar o componente nativo e loga o resultado
 console.log(
-  "[JS-INIT] Tentando carregar requireNativeComponent('MyBlueView')...",
+  "[JS-INIT] Tentando carregar requireNativeComponent('UnityView')...",
 );
-const NativeUnityView = requireNativeComponent<any>("MyBlueView");
+const NativeUnityView = requireNativeComponent<any>("UnityView");
 console.log("[JS-INIT] NativeUnityView carregado:", !!NativeUnityView);
 
 export function UnityView(props: any) {
