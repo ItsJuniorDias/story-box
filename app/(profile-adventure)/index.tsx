@@ -3,6 +3,8 @@ import { Colors } from "@/constants/theme";
 import { useRouter } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import React, { useEffect, useRef } from "react";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+
 import {
   Animated,
   Easing,
@@ -73,8 +75,14 @@ export default function AdventureProfileIntro() {
     }).start();
   };
 
-  const handleContinue = () => {
-    router.replace("/(tabs)");
+  const handleContinue = async () => {
+    const iseEulaAccepted = await AsyncStorage.getItem("eulaAccepted");
+
+    if (iseEulaAccepted !== "true") {
+      router.replace("/(terms-eula)");
+    } else {
+      router.replace("/(tabs)");
+    }
   };
 
   return (

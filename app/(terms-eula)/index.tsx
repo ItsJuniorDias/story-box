@@ -34,10 +34,12 @@ export default function EULAScreen() {
   const router = useRouter();
 
   async function acceptEULA() {
+    // Aqui você salva a resposta positiva no AsyncStorage
     await AsyncStorage.setItem("eulaAccepted", "true");
-    router.back();
-  }
 
+    // Em seguida, retorna para a tela anterior
+    router.replace("/(tabs)"); // Substitui a tela atual para evitar voltar para a EULA
+  }
   return (
     <ScrollView
       style={styles.container}

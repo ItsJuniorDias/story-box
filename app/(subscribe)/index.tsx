@@ -230,7 +230,7 @@ export default function SubscribeScreen() {
             <Text
               title="Maybe Later"
               fontFamily="regular"
-              fontSize={15}
+              fontSize={16}
               color="#6B7280"
               style={{ textAlign: "center" }}
             />
@@ -240,26 +240,8 @@ export default function SubscribeScreen() {
             <TouchableOpacity onPress={() => router.push("/(privacy-policy)")}>
               <Text
                 title="Privacy Policy"
-                fontSize={13}
+                fontSize={14}
                 fontFamily="regular"
-                color="#9CA3AF"
-                style={{ textDecorationLine: "underline" }}
-              />
-            </TouchableOpacity>
-
-            <Text
-              title=" • "
-              fontFamily="regular"
-              fontSize={13}
-              color="#9CA3AF"
-              style={{ marginHorizontal: 6 }}
-            />
-
-            <TouchableOpacity onPress={() => router.push("/(terms-eula)")}>
-              <Text
-                title="Terms of Use (EULA)"
-                fontFamily="regular"
-                fontSize={13}
                 color="#9CA3AF"
                 style={{ textDecorationLine: "underline" }}
               />
