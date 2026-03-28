@@ -22,7 +22,16 @@ platform :ios, podfile_properties['ios.deploymentTarget'] || '15.1'
 
 prepare_react_native_project!
 
+# Define o Workspace que vai englobar os dois projetos
+workspace 'StoryBox.xcworkspace'
+
+# ========================================================
+# TARGET: REACT NATIVE (EXPO)
+# ========================================================
 target 'StoryBox' do
+  # Amarra este target exclusivamente ao projeto do StoryBox
+  project 'StoryBox.xcodeproj'
+
   use_expo_modules!
 
   if ENV['EXPO_USE_COMMUNITY_AUTOLINKING'] == '1'
@@ -49,17 +58,45 @@ target 'StoryBox' do
   use_react_native!(
     :path => config[:reactNativePath],
     :hermes_enabled => podfile_properties['expo.jsEngine'] == nil || podfile_properties['expo.jsEngine'] == 'hermes',
-    # An absolute path to your application root.
     :app_path => "#{Pod::Config.instance.installation_root}/..",
     :privacy_file_aggregation_enabled => podfile_properties['apple.privacyManifestAggregationEnabled'] != 'false',
   )
+end
 
-  post_install do |installer|
-    react_native_post_install(
-      installer,
-      config[:reactNativePath],
-      :mac_catalyst_enabled => false,
-      :ccache_enabled => ccache_enabled?(podfile_properties),
-    )
+# ========================================================
+# TARGET: UNITY
+# ========================================================
+target "Unity-iPhone" do
+  # Amarra este target exclusivamente ao projeto do Unity
+  project 'Unity-iPhone.xcodeproj'
+
+  # Mantém o mesmo estilo de linkage do React Native
+  use_frameworks! :linkage => podfile_properties['ios.useFrameworks'].to_sym if podfile_properties['ios.useFrameworks']
+  use_frameworks! :linkage => ENV['USE_FRAMEWORKS'].to_sym if ENV['USE_FRAMEWORKS']
+end
+
+# ========================================================
+# POST INSTALL GLOBAL
+# ========================================================
+post_install do |installer|
+  # Garante que o path do react-native seja encontrado globalmente
+  react_native_path = "../node_modules/react-native"
+  
+  react_native_post_install(
+    installer,
+    react_native_path,
+    :mac_catalyst_enabled => false,
+    :ccache_enabled => ccache_enabled?(podfile_properties),
+  )
+
+  # Aplica correções de compilação em TODOS os targets (StoryBox e Unity)
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      # Desativa Bitcode (Essencial para Unity + RN moderno)
+      config.build_settings['ENABLE_BITCODE'] = 'NO'
+      
+      # Evita que avisos quebrem o build do Unity
+      config.build_settings['GCC_TREAT_WARNINGS_AS_ERRORS'] = 'NO'
+    end
   end
 end

@@ -1,10 +1,12 @@
-import { useFocusEffect, useRouter } from "expo-router";
+import { Color, useFocusEffect, useRouter } from "expo-router";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   Alert,
   Animated,
   Dimensions,
+  Modal,
   Pressable,
+  ScrollView,
   StyleSheet,
   View,
 } from "react-native";
@@ -71,6 +73,29 @@ export const geminiModel = genAI.getGenerativeModel({
   model: "gemini-2.5-flash",
 });
 
+let isPlayerInitialized = false;
+
+export async function setupTrackPlayer() {
+  if (isPlayerInitialized) return true;
+
+  try {
+    await TrackPlayer.setupPlayer();
+    isPlayerInitialized = true;
+    return true;
+  } catch (error: any) {
+    // Se o erro for o de inicialização duplicada, a gente apenas ignora
+    if (error?.message?.includes("already been initialized")) {
+      console.log("TrackPlayer já estava inicializado pelo Fast Refresh!");
+      isPlayerInitialized = true;
+      return true;
+    }
+
+    // Se for outro erro, logamos para debugar
+    console.error("Erro crítico ao configurar o player:", error);
+    return false;
+  }
+}
+
 export default function StorieScreen() {
   const isFocused = useIsFocused();
 
@@ -106,30 +131,23 @@ export default function StorieScreen() {
      STATE
   ========================== */
   const [isTranslating, setIsTranslating] = useState(false);
-
   const [selectedIndex, setSelectedIndex] = useState(0);
-
   const [showGuidedModal, setShowGuidedModal] = useState(false);
   const [isPlay, setIsPlay] = useState(false);
   const [activeSentenceIndex, setActiveSentenceIndex] = useState(-1);
-
   const [translatedText, setTranslatedText] = useState({
     title,
     storie,
   });
-
   const [musicIndex, setMusicIndex] = useState(0);
-
   const [showFinishModal, setShowFinishModal] = useState(false);
-
   const [isLoadingNextChapter, setIsLoadingNextChapter] = useState(false);
-
   const [branchOptions, setBranchOptions] = useState<
     | { title: string; targetIndex: number; profile: AdventureProfileType }[]
     | null
   >(null);
-
   const [isSavingProgress, setIsSavingProgress] = useState(false);
+  const [isMenuVisible, setMenuVisible] = useState(false);
 
   useEffect(() => {
     if (!isFocused) return;
@@ -153,6 +171,7 @@ export default function StorieScreen() {
       // Define modo de repetição para a música tocar em loop sem parar a leitura
       await TrackPlayer.setRepeatMode(RepeatMode.Track);
     };
+
     setupLoop();
   }, [musicIndex]);
 
@@ -418,6 +437,7 @@ export default function StorieScreen() {
     while (attempts > 0) {
       try {
         const result = await geminiModel.generateContent(prompt);
+
         return result.response.text();
       } catch (error: any) {
         if (error.toString().includes("503")) {
@@ -449,61 +469,139 @@ export default function StorieScreen() {
     }
   }
 
-  /* =========================
-     CONTEXT MENU
-  ========================== */
   const renderContextMenu = () => {
     const map = ["en", "es", "pt", "fr", "zh", "hi"];
+    const languages = [
+      "English",
+      "Spanish",
+      "Portuguese",
+      "French",
+      "Chinese",
+      "Hindi",
+    ];
     const musicOptions = BACKGROUND_TRACKS.map((t) => t.title);
 
-    return (
-      <Host style={{ width: 48, height: 48 }}>
-        <ContextMenu>
-          <ContextMenu.Items>
-            <Picker
-              label="Translate"
-              options={[
-                "English",
-                "Spanish",
-                "Portuguese",
-                "French",
-                "Chinese",
-                "Hindi",
-              ]}
-              variant="menu"
-              selectedIndex={selectedIndex}
-              onOptionSelected={({ nativeEvent: { index } }) => {
-                setSelectedIndex(index);
-                handleTranslateAll(map[index]);
-              }}
-            />
-            <Picker
-              label="Ambient Sound"
-              options={musicOptions}
-              variant="menu"
-              selectedIndex={musicIndex}
-              onOptionSelected={async ({ nativeEvent: { index } }) => {
-                setMusicIndex(index);
-                await TrackPlayer.stop();
-                // A música será reiniciada pelo hook ou lógica externa, mas importante garantir loop
-              }}
-            />
-          </ContextMenu.Items>
+    const handleCloseMenu = () => setMenuVisible(false);
 
-          <ContextMenu.Trigger>
-            <GlassView style={styles.glassButton} isInteractive>
-              <FontAwesome6
-                name={isTranslating ? "spinner" : "ellipsis-vertical"}
-                size={20}
-                color={Colors.dark.text}
-              />
-            </GlassView>
-          </ContextMenu.Trigger>
-        </ContextMenu>
-      </Host>
+    return (
+      <View>
+        {/* TRIGGER */}
+        <Pressable onPress={() => setMenuVisible(true)}>
+          <GlassView style={styles.glassButton}>
+            <FontAwesome6
+              name={isTranslating ? "spinner" : "ellipsis-vertical"}
+              size={20}
+              color={Colors.dark.text}
+            />
+          </GlassView>
+        </Pressable>
+
+        {/* OVERLAY DO MENU */}
+        <Modal
+          visible={isMenuVisible}
+          transparent={true}
+          animationType="fade"
+          onRequestClose={handleCloseMenu}
+        >
+          <Pressable style={styles.modalOverlay} onPress={handleCloseMenu}>
+            <Pressable
+              style={styles.menuContent}
+              onPress={(e) => e.stopPropagation()}
+            >
+              <ScrollView showsVerticalScrollIndicator={false}>
+                {/* SESSÃO: Tradução */}
+                <Text
+                  title="Translate"
+                  fontFamily="bold"
+                  fontSize={12}
+                  color="#888888"
+                  style={styles.sectionTitle}
+                />
+
+                {languages.map((lang, index) => {
+                  const isSelected = selectedIndex === index;
+                  return (
+                    <Pressable
+                      key={lang}
+                      style={[
+                        styles.menuItem,
+                        isSelected && styles.menuItemSelected,
+                      ]}
+                      onPress={() => {
+                        setSelectedIndex(index);
+                        handleTranslateAll(map[index]);
+                        handleCloseMenu();
+                      }}
+                    >
+                      <Text
+                        title={lang}
+                        fontFamily={isSelected ? "bold" : "regular"}
+                        fontSize={16}
+                        color={isSelected ? Colors.light.tint : "#333"}
+                      />
+                    </Pressable>
+                  );
+                })}
+
+                <View style={styles.divider} />
+
+                {/* SESSÃO: Som Ambiente */}
+                <Text
+                  title="Ambient Sound"
+                  fontFamily="bold"
+                  fontSize={12}
+                  color="#888888"
+                  style={styles.sectionTitle}
+                />
+
+                {musicOptions.map((music, index) => {
+                  const isSelected = musicIndex === index;
+                  return (
+                    <Pressable
+                      key={music}
+                      style={[
+                        styles.menuItem,
+                        isSelected && styles.menuItemSelected,
+                      ]}
+                      onPress={async () => {
+                        setMusicIndex(index);
+                        handleCloseMenu(); // Fecha o menu rápido para uma UI mais fluida
+
+                        // 1. Reseta o player (remove a música antiga)
+                        await TrackPlayer.reset();
+
+                        // 2. Adiciona a nova música baseada no index clicado
+                        await TrackPlayer.add({
+                          id: String(currentIndex),
+                          url: BACKGROUND_TRACKS[index].uri,
+                          title: String(title),
+                          artist: "Magic World",
+                          artwork: String(thumbnail),
+                        });
+
+                        // 3. Garante o loop da nova faixa
+                        await TrackPlayer.setRepeatMode(RepeatMode.Track);
+
+                        // 4. Dá o play na nova música
+                        await TrackPlayer.play();
+                      }}
+                    >
+                      <Text
+                        title={music}
+                        fontFamily={isSelected ? "bold" : "regular"}
+                        fontSize={16}
+                        color={isSelected ? Colors.light.tint : "#333"}
+                      />
+                    </Pressable>
+                  );
+                })}
+              </ScrollView>
+            </Pressable>
+          </Pressable>
+        </Modal>
+      </View>
     );
   };
-
   /* =========================
      SPEECH + TRACKPLAYER
   ========================== */
@@ -785,9 +883,7 @@ export default function StorieScreen() {
         </Pressable>
 
         {/* TRANSLATE */}
-        <Pressable style={styles.translateButtonWrapper}>
-          {renderContextMenu()}
-        </Pressable>
+        <View style={styles.translateButtonWrapper}>{renderContextMenu()}</View>
 
         {/* PLAY */}
         <Pressable style={styles.playButtonWrapper} onPress={handlePlayPress}>
@@ -1061,5 +1157,54 @@ const styles = StyleSheet.create({
     paddingHorizontal: 6,
     paddingVertical: 4,
     borderRadius: 8,
+  },
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: "rgba(0, 0, 0, 0.3)", // Escurece levemente o fundo
+    justifyContent: "center", // Centraliza o menu na tela
+    alignItems: "center",
+  },
+  menuContent: {
+    backgroundColor: "#FFFFFF", // Fundo branco
+    borderRadius: 16,
+    paddingVertical: 10,
+    width: "80%",
+    maxHeight: "70%",
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.15, // Sombra um pouco mais suave para combinar com fundo claro
+    shadowRadius: 5,
+    elevation: 8,
+  },
+  sectionTitle: {
+    fontSize: 12,
+    fontWeight: "bold",
+    color: "#888888", // Mantém o cinza para o subtítulo
+    textTransform: "uppercase",
+    paddingHorizontal: 20,
+    marginTop: 10,
+    marginBottom: 5,
+  },
+  menuItem: {
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+  },
+  menuItemSelected: {
+    backgroundColor: "rgba(0, 0, 0, 0.05)", // Fundo cinza bem clarinho quando selecionado
+  },
+  // As duas classes abaixo não são mais usadas se você está passando a cor via prop no <Text>,
+  // mas ajustei caso precise voltar a usá-las:
+  menuItemText: {
+    fontSize: 16,
+    color: "#333333", // Cinza escuro para o texto normal
+  },
+  menuItemTextSelected: {
+    color: "#000000", // Preto puro para o texto selecionado
+    fontWeight: "bold",
+  },
+  divider: {
+    height: 1,
+    backgroundColor: "rgba(0, 0, 0, 0.1)", // Linha divisória cinza clara
+    marginVertical: 10,
   },
 });

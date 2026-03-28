@@ -11,59 +11,10 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		336B7D7D84D02DF43A6E077F /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 62353DCF379B0B8D5E0D295A /* PrivacyInfo.xcprivacy */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
-		797E1CD92F72988D004DD1B4 /* UnityFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 797E1CD62F729876004DD1B4 /* UnityFramework.framework */; };
-		797E1CDA2F72988D004DD1B4 /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 797E1CD62F729876004DD1B4 /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		797E1CDD2F7298ED004DD1B4 /* UnityViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 797E1CDC2F7298ED004DD1B4 /* UnityViewManager.m */; };
-		797E1CE12F72997C004DD1B4 /* UnityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797E1CE02F72997C004DD1B4 /* UnityManager.swift */; };
 		B7F73BC9B0FEC617A25485E0 /* libPods-StoryBox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D135DD76B00A9D1F0C13B98E /* libPods-StoryBox.a */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
 		F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11748412D0307B40044C1D9 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		797E1CD12F729876004DD1B4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 797E1CC82F729875004DD1B4 /* Unity-iPhone.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1D6058910D05DD3D006BFB54;
-			remoteInfo = "Unity-iPhone";
-		};
-		797E1CD32F729876004DD1B4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 797E1CC82F729875004DD1B4 /* Unity-iPhone.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5623C57317FDCB0800090B9E;
-			remoteInfo = "Unity-iPhone Tests";
-		};
-		797E1CD52F729876004DD1B4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 797E1CC82F729875004DD1B4 /* Unity-iPhone.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9D25AB9D213FB47800354C27;
-			remoteInfo = UnityFramework;
-		};
-		797E1CD72F729876004DD1B4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 797E1CC82F729875004DD1B4 /* Unity-iPhone.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7F4E05A02717216D00A2CBE4;
-			remoteInfo = GameAssembly;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		797E1CDB2F72988D004DD1B4 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				797E1CDA2F72988D004DD1B4 /* UnityFramework.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		13B07F961A680F5B00A75B9A /* StoryBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,10 +22,6 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = StoryBox/Info.plist; sourceTree = "<group>"; };
 		62353DCF379B0B8D5E0D295A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = StoryBox/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		6C7431452A2693EF74242487 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-StoryBox/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
-		797E1CC82F729875004DD1B4 /* Unity-iPhone.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Unity-iPhone.xcodeproj"; path = "/Users/junior/CAT-IOS/Unity-iPhone.xcodeproj"; sourceTree = "<absolute>"; };
-		797E1CDC2F7298ED004DD1B4 /* UnityViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnityViewManager.m; sourceTree = "<group>"; };
-		797E1CDF2F72992B004DD1B4 /* UnityViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnityViewManager.h; sourceTree = "<group>"; };
-		797E1CE02F72997C004DD1B4 /* UnityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnityManager.swift; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = StoryBox/SplashScreen.storyboard; sourceTree = "<group>"; };
 		B923565EC87CB1718459FD6E /* Pods-StoryBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoryBox.debug.xcconfig"; path = "Target Support Files/Pods-StoryBox/Pods-StoryBox.debug.xcconfig"; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
@@ -91,7 +38,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7F73BC9B0FEC617A25485E0 /* libPods-StoryBox.a in Frameworks */,
-				797E1CD92F72988D004DD1B4 /* UnityFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +47,6 @@
 		13B07FAE1A68108700A75B9A /* StoryBox */ = {
 			isa = PBXGroup;
 			children = (
-				797E1CC82F729875004DD1B4 /* Unity-iPhone.xcodeproj */,
 				F11748412D0307B40044C1D9 /* AppDelegate.swift */,
 				F11748442D0722820044C1D9 /* StoryBox-Bridging-Header.h */,
 				BB2F792B24A3F905000567C9 /* Supporting */,
@@ -109,9 +54,6 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
 				62353DCF379B0B8D5E0D295A /* PrivacyInfo.xcprivacy */,
-				797E1CDC2F7298ED004DD1B4 /* UnityViewManager.m */,
-				797E1CDF2F72992B004DD1B4 /* UnityViewManager.h */,
-				797E1CE02F72997C004DD1B4 /* UnityManager.swift */,
 			);
 			name = StoryBox;
 			sourceTree = "<group>";
@@ -131,17 +73,6 @@
 				6C7431452A2693EF74242487 /* ExpoModulesProvider.swift */,
 			);
 			name = StoryBox;
-			sourceTree = "<group>";
-		};
-		797E1CCB2F729876004DD1B4 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				797E1CD22F729876004DD1B4 /* Unity-Target-New.app */,
-				797E1CD42F729876004DD1B4 /* Unity-iPhone Tests.xctest */,
-				797E1CD62F729876004DD1B4 /* UnityFramework.framework */,
-				797E1CD82F729876004DD1B4 /* libGameAssembly.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -216,7 +147,6 @@
 				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
 				EEC4E05D148148DC9EA63639 /* [Expo Dev Launcher] Strip Local Network Keys for Release */,
 				37190CBD83F539654DDFBA4D /* [CP] Embed Pods Frameworks */,
-				797E1CDB2F72988D004DD1B4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -236,8 +166,8 @@
 				LastUpgradeCheck = 1130;
 				TargetAttributes = {
 					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = 9337P26ZJ6;
 						LastSwiftMigration = 1250;
-						DevelopmentTeam = "9337P26ZJ6";
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -253,50 +183,12 @@
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 797E1CCB2F729876004DD1B4 /* Products */;
-					ProjectRef = 797E1CC82F729875004DD1B4 /* Unity-iPhone.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* StoryBox */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		797E1CD22F729876004DD1B4 /* Unity-Target-New.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			name = "Unity-Target-New.app";
-			path = "cat-runner.app";
-			remoteRef = 797E1CD12F729876004DD1B4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		797E1CD42F729876004DD1B4 /* Unity-iPhone Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Unity-iPhone Tests.xctest";
-			remoteRef = 797E1CD32F729876004DD1B4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		797E1CD62F729876004DD1B4 /* UnityFramework.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = UnityFramework.framework;
-			remoteRef = 797E1CD52F729876004DD1B4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		797E1CD82F729876004DD1B4 /* libGameAssembly.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libGameAssembly.a;
-			remoteRef = 797E1CD72F729876004DD1B4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		13B07F8E1A680F5B00A75B9A /* Resources */ = {
@@ -466,8 +358,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */,
-				797E1CE12F72997C004DD1B4 /* UnityManager.swift in Sources */,
-				797E1CDD2F7298ED004DD1B4 /* UnityViewManager.m in Sources */,
 				03661CFAAEDF2581A81F78B0 /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,7 +372,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = StoryBox/StoryBox.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9337P26ZJ6;
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -508,9 +401,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
-				DEVELOPMENT_TEAM = "9337P26ZJ6";
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
 			};
 			name = Debug;
 		};
@@ -521,7 +411,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = StoryBox/StoryBox.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9337P26ZJ6;
 				INFOPLIST_FILE = StoryBox/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -541,9 +434,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
-				DEVELOPMENT_TEAM = "9337P26ZJ6";
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
 			};
 			name = Release;
 		};

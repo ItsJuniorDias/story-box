@@ -94,15 +94,17 @@ export default function FantasyRunnerEndGame() {
     async function init() {
       const saved = await AsyncStorage.getItem("@high_score");
       if (saved) setHighScore(Number(saved));
-      try {
-        bgmRef.current = player;
-      } catch (e) {}
+
+      // Apenas salva a referência do player para ser usada no restartGame
+      bgmRef.current = player;
     }
     init();
+
+    // Opcional: pausar a música se o componente for desmontado antes do hook limpar
     return () => {
-      bgmRef.current?.unloadAsync();
+      bgmRef.current?.pause();
     };
-  }, []);
+  }, [player]);
 
   const updateScore = (points: number) => {
     scoreCounter.current += points;
@@ -527,6 +529,13 @@ export default function FantasyRunnerEndGame() {
     };
     animate();
   };
+
+  useEffect(() => {
+    if (isLoaded && player) {
+      player.loop = true; // Faz a música tocar em loop
+      player.play(); // Inicia a música
+    }
+  }, [isLoaded, player]);
 
   return (
     <View style={styles.container} {...panResponder.panHandlers}>
