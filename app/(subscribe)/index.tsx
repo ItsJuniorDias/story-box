@@ -159,18 +159,17 @@ export default function SubscribeScreen() {
 
   return (
     <View style={{ flex: 1, backgroundColor: "#F9FAFB" }}>
-      {/* Usando ScrollView nativo ao invés de FlatList */}
       <ScrollView
         style={{ flex: 1 }}
         contentContainerStyle={{
           paddingHorizontal: 24,
           paddingTop: 64,
-          paddingBottom: 24, // Sem necessidade de 220px, pois o footer não é mais absoluto
+          paddingBottom: 24,
         }}
         showsVerticalScrollIndicator={false}
       >
         <Text
-          title="Magic World Pro"
+          title="Story Box Pro"
           fontFamily="bold"
           fontSize={32}
           color="#111827"
@@ -197,7 +196,6 @@ export default function SubscribeScreen() {
         )}
       </ScrollView>
 
-      {/* Footer reposicionado na base usando o Flex do container principal */}
       {!loading && packages.length > 0 && (
         <View style={styles.footer}>
           <TouchableOpacity
@@ -225,7 +223,7 @@ export default function SubscribeScreen() {
               });
               router.back();
             }}
-            style={{ marginTop: 16 }}
+            style={{ marginTop: 16, marginBottom: 16 }}
           >
             <Text
               title="Maybe Later"
@@ -236,10 +234,40 @@ export default function SubscribeScreen() {
             />
           </TouchableOpacity>
 
+          {/* Texto de Renovação Obrigatório pela Apple */}
+          <View style={{ paddingHorizontal: 10 }}>
+            <Text
+              title="Payment will be charged to your Apple ID account at confirmation of purchase. Subscription automatically renews unless it is canceled at least 24 hours before the end of the current period. You can manage and cancel your subscriptions by going to your App Store account settings after purchase."
+              fontFamily="regular"
+              fontSize={10}
+              color="#9CA3AF"
+              style={{ textAlign: "center", marginBottom: 12, lineHeight: 14 }}
+            />
+          </View>
+
+          {/* Links Legais Lado a Lado */}
           <View style={styles.legalLinksRow}>
             <TouchableOpacity onPress={() => router.push("/(privacy-policy)")}>
               <Text
                 title="Privacy Policy"
+                fontSize={14}
+                fontFamily="regular"
+                color="#9CA3AF"
+                style={{ textDecorationLine: "underline" }}
+              />
+            </TouchableOpacity>
+
+            <Text
+              title="  •  "
+              fontSize={18}
+              fontFamily="regular"
+              color="#9CA3AF"
+            />
+
+            {/* Certifique-se de que a rota "/eula" ou o nome do seu arquivo seja esse */}
+            <TouchableOpacity onPress={() => router.push("/(terms-eula)")}>
+              <Text
+                title="Terms of Use"
                 fontSize={14}
                 fontFamily="regular"
                 color="#9CA3AF"
@@ -263,7 +291,7 @@ const styles = StyleSheet.create({
   },
   selectedCard: {
     borderColor: "#5C81F5",
-    backgroundColor: "#EFF4FF", // Um azul um pouco mais claro e limpo para o selected no light theme
+    backgroundColor: "#EFF4FF",
   },
   cardHeader: {
     flexDirection: "row",
@@ -286,7 +314,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#FFFFFF",
     paddingHorizontal: 24,
     paddingTop: 24,
-    paddingBottom: 40, // Espaço para a Home Indicator do iOS
+    paddingBottom: 40,
     borderTopLeftRadius: 24,
     borderTopRightRadius: 24,
     shadowColor: "#000",
@@ -310,6 +338,5 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
-    marginTop: 20,
   },
 });

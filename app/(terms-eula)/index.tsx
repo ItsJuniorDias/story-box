@@ -55,7 +55,7 @@ export default function EULAScreen() {
         fontFamily="bold"
         fontSize={28}
         color={Colors.light.text} // Título principal escuro
-        title="End User License Agreement (EULA)"
+        title="End User License Agreement (EULA) & Terms of Use"
       />
 
       <View style={{ height: 8 }} />
@@ -65,14 +65,14 @@ export default function EULAScreen() {
         fontFamily="regular"
         fontSize={14}
         color="#6B7280" // Cinza sutil para metadados
-        title="Last updated: January 2026"
+        title="Last updated: March 2026"
       />
 
       <View style={{ height: 32 }} />
 
       <Section
         title="1. License Grant"
-        content="Magic World grants you a limited, non-exclusive, non-transferable, and revocable license to use this application for personal and non-commercial purposes, in accordance with Apple’s App Store Terms of Service."
+        content="Story Box grants you a limited, non-exclusive, non-transferable, and revocable license to use this application for personal and non-commercial purposes, in accordance with Apple’s App Store Terms of Service."
       />
 
       <Section
@@ -82,17 +82,17 @@ export default function EULAScreen() {
 
       <Section
         title="3. Children’s Use"
-        content="Magic World is intended for children with parental or guardian consent. Parents are responsible for supervising usage. The App contains no social interaction, advertising, or user-generated content."
+        content="Story Box is intended for children with parental or guardian consent. Parents are responsible for supervising usage. The App contains no social interaction, advertising, or user-generated content."
       />
 
       <Section
-        title="4. Subscriptions"
-        content="Subscriptions are processed via Apple ID and renew automatically unless canceled at least 24 hours before the end of the current period."
+        title="4. Subscriptions & Auto-Renewal"
+        content="Story Box offers auto-renewing subscriptions. Payment will be charged to your Apple ID account at confirmation of purchase. Subscriptions automatically renew unless auto-renew is turned off at least 24-hours before the end of the current period. Your account will be charged for renewal within 24-hours prior to the end of the current period. Subscriptions may be managed by the user and auto-renewal may be turned off by going to the user's Account Settings after purchase."
       />
 
       <Section
         title="5. Intellectual Property"
-        content="All stories, characters, illustrations, audio, and software are owned by Magic World or its licensors and are protected by law."
+        content="All stories, characters, illustrations, audio, and software are owned by Story Box or its licensors and are protected by law."
       />
 
       <Section
@@ -102,7 +102,7 @@ export default function EULAScreen() {
 
       <Section
         title="7. Limitation of Liability"
-        content="Magic World shall not be liable for indirect or consequential damages, loss of data, or issues caused by third-party services, including Apple."
+        content="Story Box shall not be liable for indirect or consequential damages, loss of data, or issues caused by third-party services, including Apple."
       />
 
       <Section
@@ -117,7 +117,7 @@ export default function EULAScreen() {
 
       <Section
         title="10. Contact"
-        content="Email: its_juniordias1997@icloud.com"
+        content="Email: its_alejunior1997@icloud.com"
       />
 
       {/* Accept Button */}
