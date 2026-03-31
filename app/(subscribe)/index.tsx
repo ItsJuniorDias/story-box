@@ -103,6 +103,26 @@ export default function SubscribeScreen() {
     }
   };
 
+  const handleRestorePurchases = async () => {
+    try {
+      setLoading(true);
+      const purchaserInfo = await Purchases.restorePurchases();
+
+      if (purchaserInfo.entitlements.active["Story Box Pro"]) {
+        await saveProStatus(true);
+        Alert.alert("Success", "Purchases successfully restored!");
+        router.back();
+      } else {
+        Alert.alert("Notice", "No active subscription found to restore.");
+      }
+    } catch (e) {
+      console.error("Erro ao restaurar compras", e);
+      Alert.alert("Error", "Could not restore purchases.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   const renderPackage = (item: any) => {
     const isSelected = selectedPackage?.identifier === item.identifier;
     const isMonthly = item.packageType === "MONTHLY";
@@ -215,6 +235,21 @@ export default function SubscribeScreen() {
             )}
           </TouchableOpacity>
 
+          {/* Botão de Restaurar Compras (Essencial para a Apple) */}
+          <TouchableOpacity
+            onPress={handleRestorePurchases}
+            disabled={loading}
+            style={{ marginTop: 16 }}
+          >
+            <Text
+              title="Restore Purchases"
+              fontFamily="bold"
+              fontSize={14}
+              color="#5C81F5"
+              style={{ textAlign: "center" }}
+            />
+          </TouchableOpacity>
+
           <TouchableOpacity
             onPress={async () => {
               await logEvent("purchase_cancelled", {
@@ -264,7 +299,6 @@ export default function SubscribeScreen() {
               color="#9CA3AF"
             />
 
-            {/* Certifique-se de que a rota "/eula" ou o nome do seu arquivo seja esse */}
             <TouchableOpacity onPress={() => router.push("/(terms-eula)")}>
               <Text
                 title="Terms of Use"
@@ -291,7 +325,7 @@ const styles = StyleSheet.create({
   },
   selectedCard: {
     borderColor: "#5C81F5",
-    backgroundColor: "#EFF4FF",
+    backgroundColor: "#EFF4FF", // Fundo azul suave para combinar com #5C81F5
   },
   cardHeader: {
     flexDirection: "row",

@@ -2279,6 +2279,8 @@ PODS:
     - libwebp (~> 1.0)
     - SDWebImage/Core (~> 5.17)
   - SwiftAudioEx (1.1.0)
+  - Unity (0.1.0):
+    - ExpoModulesCore
   - Yoga (0.0.0)
 
 DEPENDENCIES:
@@ -2400,6 +2402,7 @@ DEPENDENCIES:
   - RNPaywalls (from `../node_modules/react-native-purchases-ui`)
   - RNPurchases (from `../node_modules/react-native-purchases`)
   - RNScreens (from `../node_modules/react-native-screens`)
+  - Unity (from `../node_modules/unity/ios`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -2653,6 +2656,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-purchases"
   RNScreens:
     :path: "../node_modules/react-native-screens"
+  Unity:
+    :path: "../node_modules/unity/ios"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -2786,6 +2791,7 @@ SPEC CHECKSUMS:
   SDWebImageSVGCoder: 15a300a97ec1c8ac958f009c02220ac0402e936c
   SDWebImageWebPCoder: e38c0a70396191361d60c092933e22c20d5b1380
   SwiftAudioEx: f6aa653770f3a0d3851edaf8d834a30aee4a7646
+  Unity: 40eb0888376522470c3e2a0999e2e3eb49858d9c
   Yoga: dd994d8c85dca5cc9b10f5df8c01f9ef1d0da191
 
 PODFILE CHECKSUM: 0ac9cabf53303e84de88cb803307720bf5fe00e0

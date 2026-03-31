@@ -57,24 +57,24 @@ export default function PrivacyPolicyScreen() {
         fontFamily="regular"
         fontSize={14}
         color="#6B7280" // Cinza sutil para metadados
-        title="Last updated: January 2026"
+        title="Last updated: March 2026"
       />
 
       <View style={{ height: 32 }} />
 
       <Section
         title="1. Introduction"
-        content="Magic World values your privacy and is committed to protecting personal information. This Privacy Policy explains how information is collected, used, and protected when using the Magic World application."
+        content="Story Box values your privacy and is committed to protecting personal information. This Privacy Policy explains how information is collected, used, and protected when using the Story Box application."
       />
 
       <Section
         title="2. Information We Collect"
-        content="Magic World does not collect personal data from children. Limited technical information such as device type, app version, and anonymous usage data may be collected to improve performance and stability."
+        content="Story Box does not collect personal data from children. Limited technical information such as device type, app version, and anonymous usage data may be collected to improve performance and stability."
       />
 
       <Section
         title="3. Children’s Privacy"
-        content="Magic World is designed for children and complies with applicable children’s privacy laws. The App does not allow user-generated content, messaging, or social interaction, and does not display advertising."
+        content="Story Box is designed for children and complies with applicable children’s privacy laws. The App does not allow user-generated content, messaging, or social interaction, and does not display advertising."
       />
 
       <Section
@@ -84,7 +84,7 @@ export default function PrivacyPolicyScreen() {
 
       <Section
         title="5. Third-Party Services"
-        content="Magic World may use trusted third-party services such as Apple for payments and analytics. These services operate under their own privacy policies."
+        content="Story Box may use trusted third-party services such as Apple for payments and analytics. These services operate under their own privacy policies."
       />
 
       <Section
@@ -104,7 +104,7 @@ export default function PrivacyPolicyScreen() {
 
       <Section
         title="9. Contact"
-        content="If you have questions or concerns about this Privacy Policy, please contact us at: its_juniordias1997@icloud.com"
+        content="If you have questions or concerns about this Privacy Policy, please contact us at: its_alejunior1997@icloud.com"
       />
 
       {/* Accept Button */}
