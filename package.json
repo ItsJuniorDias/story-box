@@ -72,7 +72,7 @@
     "three-stdlib": "^2.36.1",
     "uuid": "^13.0.0",
     "zustand": "^5.0.9",
-    "unity": "file:./unity"
+    "unity": "file:./unity/"
   },
   "devDependencies": {
     "@react-native-community/cli": "latest",
